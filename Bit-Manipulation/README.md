@@ -82,7 +82,7 @@ note that **XOR** does not satisfy the idempotent law;
 `AND & Returns 1 if both bits are 1`
 ![AND](./img/AND.gif)
 ---
-`NOT ~ Inverts the bits`
+`NOT ~ Inverts the bits 1 becomes 0 and 0 becomes 1`
 ![NOT](./img/NOT.gif)
 ---
 `OR | Returns 1 if at least one bit is 1`
