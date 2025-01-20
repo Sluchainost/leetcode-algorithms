@@ -40,7 +40,7 @@
 
 In the image below, we can see a tree of **subproblems** we need to solve in order to get `F(5)`:
 
-![Fibonacci-sequence](img\Fibonacci-sequence-5.jpg)
+![Fibonacci-sequence](./img/Fibonacci-sequence-5.jpg)
 
 One drawback to this approach is that it requires computing the same **Fibonacci** numbers multiple times in order to get our solution.
 
@@ -52,7 +52,7 @@ This way, if we run into the same **subproblem** more than once, we can use our 
 
 This **dynamic programming** technique is called **memoization**. We can see how our tree of subproblems shrinks when we use **memoization**:
 
-![Fibonacci-memoization](img\Fibonacci-memoization-(top-down).jpg)
+![Fibonacci-memoization](./img/Fibonacci-memoization-(top-down).jpg)
 
 ### Bottom-Up Approach (Tabulation)
 
@@ -60,7 +60,7 @@ In the **bottom-up dynamic programming** approach, we’ll reorganize the order 
 
 We’ll compute `F(0)`, then `F(1)`, then `F(2)`, and so on:
 
-![Fibonacci-tabulation](img\Fibonacci-tabulation-(bottom-up).jpg)
+![Fibonacci-tabulation](./img/Fibonacci-tabulation-(bottom-up).jpg)
 
 This will allow us to compute the solution to each problem only once, and we’ll only need to save two intermediate results at a time.
 
