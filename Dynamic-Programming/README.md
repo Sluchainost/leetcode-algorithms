@@ -1,6 +1,7 @@
 # Dynamic Programming
 
 ## Properties of dynamic programming
+
 **Dynamic programming** (DP) is a powerful algorithmic technique used to solve problems that can be broken down into overlapping **subproblems** and optimal substructure. Here are the key properties and characteristics of **dynamic programming**:
 
 1. `Optimal Substructure`

@@ -2,7 +2,6 @@
 
 ## Properties of trie
 
-
 ## Visualization
 
 ## Best explanations

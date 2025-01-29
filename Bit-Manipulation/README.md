@@ -4,93 +4,110 @@
 
 Bit operations have many properties. Here, we will list common properties of **AND**, **OR**, **XOR**, and **negation** in bit operations. We assume that the variables below are all signed integers.
 
-1. `Idempotent law`:
-```
+`Idempotent law`:
+
+```python
     a & a = a
     a | a = a
 ```
-note that **XOR** does not satisfy the idempotent law;
 
-2. `Commutative law`:
-```
+- note that **XOR** does not satisfy the **idempotent law**
+
+`Commutative law`:
+
+```markdown
     a & b = b & a
     a | b = b | a
     a ⊕ b = b ⊕ a
 ```
 
-3. `Associativity`:
-```
+`Associativity`:
+
+```markdown
     (a & b) & c = a & (b & c)
     (a | b) | c = a | (b | c)
     (a ⊕ b) ⊕ c = a ⊕ (b ⊕ c)
 ```
 
-4. `Distributive Law`:
-```
+`Distributive Law`:
+
+```markdown
     (a & b) | c = (a | c) & (b | c)
     (a | b) & c = (a & c) | (b & c)
     (a ⊕ b) & c = (a & c) ⊕ (b & c)
 ```
 
-5. `De Morgan's Law`:
-```
+`De Morgan's Law`:
+
+```markdown
     ∼ (a & b) = (∼a) | (∼b)
     ∼ (a | b) = (∼a) & (∼b)
 ```
 
-6. `Negative operation properties`:
-```
+`Negative operation properties`:
+
+```markdown
     -1 = ∼0
     -a = ∼(a−1)
 ```
 
-7. `AND operation properties`:
-```
+`AND operation properties`:
+
+```markdown
     a & 0 = 0
     a & (-1) = a
     a & (∼a) = 0
 ```
 
-8. `OR operation properties`:
-```
+`OR operation properties`:
+
+```markdown
     a | 0 = a
     a | (∼a) = −1
 ```
 
-9. `XOR operation properties`:
-```
+`XOR operation properties`:
+
+```markdown
     a ⊕ 0 = a
     a ⊕ a = 0
 ```
 
-10. `Other properties`:
-```
+`Other properties`:
+
+```markdown
     The result of a & (a−1) is to change the last 1 in the binary representation of a to 0
 ```
-```
+
+```markdown
     The result of a & (-a) (equivalent to a & (∼(a−1))) is to keep only the last 1 of the binary representation of a, and set the remaining 1s to 0.
 ```
 
 ## Visualization
 
-`Left shift << Shifts bits to the left (multiplies by 2)`
+## `Left shift << Shifts bits to the left (multiplies by 2)`
+
 ![left-shift](./img/left-shift.gif)
----
-`Right shift >> Shifts bits to the right (divides by 2)`
+
+## `Right shift >> Shifts bits to the right (divides by 2)`
+
 ![right-shift](./img/right-shift.gif)
----
-`AND & Returns 1 if both bits are 1`
+
+## `AND & Returns 1 if both bits are 1`
+
 ![AND](./img/AND.gif)
----
-`NOT ~ Inverts the bits 1 becomes 0 and 0 becomes 1`
+
+## `NOT ~ Inverts the bits 1 becomes 0 and 0 becomes 1`
+
 ![NOT](./img/NOT.gif)
----
-`OR | Returns 1 if at least one bit is 1`
+
+## `OR | Returns 1 if at least one bit is 1`
+
 ![OR](./img/OR.gif)
----
-`XOR ^ Returns 1 if the bits are different`
+
+## `XOR ^ Returns 1 if the bits are different`
+
 ![XOR](./img/XOR.gif)
----
 
 ## Best explanations
 
